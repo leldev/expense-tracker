@@ -1,0 +1,9 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+
+    "ConnectionStrings__Expense": "Server=localhost,1433;Initial Catalog=expense;User ID=sa;Password=P2ssw0rd;MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=True;Connection Timeout=60;"
+  }
+}
