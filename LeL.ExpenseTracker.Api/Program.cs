@@ -21,6 +21,8 @@ builder.Services
     .AddValidatorsFromAssembly(typeof(Program).Assembly)
     .AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>))
 
+    .AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestResponseLoggingBehavior<,>))
+
     .ConfigureDbContext(builder.Configuration);
 
 var app = builder.Build();
